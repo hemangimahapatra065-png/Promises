@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Promises 💞</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #fff0f5);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.link-btn {
+    font-size: 22px;
+    color: #ff2f92;
+    background: white;
+    padding: 14px 22px;
+    border-radius: 30px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#content {
+    display: none;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 18px;
+    margin-top: 25px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.note {
+    margin-top: 20px;
+    background: white;
+    padding: 16px;
+    border-radius: 15px;
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+    animation: fadeIn 2s ease;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <a href="#" class="link-btn" onclick="showPromises()">💌 Click here to know my promises</a>
+
+    <div id="content">
+        <!-- Replace with your image name or link -->
+        <img src="promise.jpg" alt="My Promises">
+
+        <div class="My dear Husband">
+            These promises are not just words 💖<br>
+            They are pieces of my heart for you.<br>
+            I promise to love you, respect you,<br>
+            and stand by you forever 🌸
+        </div>
+    </div>
+
+</div>
+
+<script>
+function showPromises() {
+    document.querySelector('.link-btn').style.display = "none";
+    document.getElementById('content').style.display = "block";
+}
+</script>
+
+</body>
+</html>
